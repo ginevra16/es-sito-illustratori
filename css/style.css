@@ -1,0 +1,410 @@
+/* Impostazioni di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Stili per gli heading */
+h1 {
+    line-height: 1;
+    margin-bottom: 150px;
+}
+
+h2.subtitle {
+    text-align: left;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+h2.center {
+    text-align: center;
+}
+
+/* Stili per le immagini */
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Stili per il contenitore principale */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Stili per il titolo dell'illustratore */
+h1.title-illustrator {
+    font-size: 96px;
+    text-align: left;
+}
+
+/* Stili per la descrizione */
+p.description {
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 150px;
+}
+
+/* Stili per l'hr */
+hr.solid {
+    height: 1px;
+    background-color: #444;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* Stili per le sezioni */
+section {
+    margin: 200px 0;
+}
+
+/* Stili per l'header e il footer */
+header,
+footer {
+    color: #262626;
+    padding: 20px 0;
+}
+
+header {
+    background-color: rgb(149, 118, 172);
+    margin-bottom: 100px;
+}
+
+header nav,
+footer>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav>a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+header nav ul li,
+footer ul li {
+    display: inline-block;
+}
+
+header nav ul li {
+    margin-left: 70px;
+}
+
+/* Stili per la sezione HOME */
+h1.title {
+    font-size: 64px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 250px;
+    grid-row-gap: 150px;
+    
+}
+
+.card {
+    text-align: center;
+    
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+div img {
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 20px 20px 4px 20px;
+    padding-bottom: 20px;
+    font-size: 32px;
+    text-align: center;
+}
+
+div.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+}
+
+@media (max-width: 800px) { 
+    body { 
+        background-color: lavenderblush;
+    }
+}
+
+@media (max-width: 400px) { 
+    body { 
+        background-color: lavenderblush;
+    }
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Stili per il blocco CAMILA HUINCA */
+header.one {
+    background-color: lightsteelblue;
+}
+
+header.one a:hover {
+    color: royalblue;
+}
+
+.camilo-huinca .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.image {
+    margin-bottom: 50px;
+}
+
+/* Stili per il blocco TIM LAHAN */
+header.two {
+    background-color: khaki;
+}
+
+header.two a:hover {
+    color: darkorange;
+}
+
+.image.tim-lahan {
+    width: 50%;
+    margin: auto;
+}
+
+
+#tim-lahan-art-1 .image {
+    padding: 10px;
+}
+
+.cards.tim-lahan {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+}
+
+/* Stili per il blocco KARLOTTA FREIER */
+header.three {
+    background-color: darkolivegreen;
+}
+
+header.three a:hover {
+    color: seagreen;
+}
+
+.image.karlotta-freier {
+    width: 70%;
+    margin: auto;
+}
+
+.images.karlotta-freier {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images.karlotta-freier-2 {
+    justify-content: space-between;
+}
+
+/* Stili per il blocco XOANA HERRERA */
+header.four {}
+
+header.four a:hover {}
+
+.image.xoana {
+    width: 50%;
+    margin: auto;
+}
+
+.image.xoana2 {
+    width: 80%;
+    margin: auto;
+}
+
+#xoana-art2 .images {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Stili per il blocco LIN FRITZ */
+header.five {
+    background-color: plum;
+}
+
+header.five a:hover {
+    color: purple;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards.linn-fritz,
+.cards.xoana-herrera {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+.cards.lin-fritz .card {
+    width: 100%;
+}
+
+/* Stili per il blocco LA BOCA */
+header.six {
+    background-color: mediumorchid;
+}
+
+header.six a:hover {
+    color: palevioletred;
+}
+
+.arts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.art {
+    margin-bottom: 20px;
+}
+
+.art img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cards.la-boca {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+/* Stili per il footer */
+footer>* {
+    font-size: 20px;
+}
+
+footer ul li {
+    margin-left: 35px;
+}
+
+/* Stili responsivi */
+@media screen and (max-width: 768px) {
+
+    body#camilo-huinca {
+        background-color: aliceblue;
+    }
+
+    body#tim-lahan {
+        background-color: lightgoldenrodyellow;
+    }
+
+    body#karlotta-freier {
+        background-color: honeydew;
+    }
+
+    body#xoana-herrera {
+        /*background-color: ; */
+    }
+
+    body#lin-fritz {
+        background-color: lavenderblush;
+    }
+
+    body#la-boca {
+        background-color: thistle;
+    }
+
+    header nav ul li {
+        margin-left: 35px;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        margin-bottom: 80px;
+    }
+
+    h1.title {
+        font-size: 32px;
+    }
+
+    h1.title-illustrator {
+        font-size: 48px;
+    }
+
+    p.description {
+        font-size: 18px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .cards {
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+    }
+
+    .cards.la-boca,
+    .cards.tim-lahan {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+    }
+
+    .cards.la-boca {
+        width: 100%;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    footer>* {
+        font-size: 14px;
+    }
+}
